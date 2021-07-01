@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../static/style.css" />
+	<title>KNU Database</title>
+</head>
+<body>
+	<center>
+		<div class="conteiner">
+			<img src="../static/KNU.png" alt="KNU" class="logo" />
+			<br></br>
+			<div class="main">
+				<h2>Available actions</h3>
+					<div class="select">
+						<a href="/select">Show students table</a>
+					</div>
+					<div class="insert">
+						<a href="/insert">Add student</a>
+					</div>
+					<div class="update">
+						<a href="/update">Update student info</a>
+					</div>
+					<div class="delete">
+						<a href="/delete">Delete student</a>
+					</div>
+			</div>
+			<br></br>
+			<div class="additional">
+				<div class="stats" style="float:left"">
+					<h2 float="left">Statistics</h3>
+						<div class="best_students">
+							<a href="/get_best_students">Best students</a>
+						</div>
+						<div class="best_groups">
+							<a href="/get_best_groups">Best groups</a>
+						</div>
+						<div class="laggards">
+							<a href="/get_laggards">Laggards</a>
+						</div>
+				</div>
+				<div class="stats" style="float:right">
+					<h2>Joins</h3>
+						<div class="group_leaders">
+							<a href="/group_leaders">Group leaders</a>
+						</div>
+						<div class="group_teacher_cathedra">
+							<a href="/group_teacher_cathedra">Groups teachers info</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

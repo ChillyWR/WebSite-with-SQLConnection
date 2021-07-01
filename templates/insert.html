@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../static/style.css" />
+		<title>KNU Database</title>
+	</head>
+	<body>
+		<div class="container">
+			{% if message %}
+			<p class="message">{{ message | safe }}</p>
+			{% endif %}
+			<form method="POST">
+				<div class="form">
+					<h3>Name *</h3>
+					<input
+						type="text"
+						name="name"
+						placeholder="Lucas Nelson"
+					/>
+				</div>
+				<div class="form">
+					<h3>Date of birth *</h3>
+					<input
+						type="text"
+						name="date_of_birth"
+						placeholder="2000-02-20"
+					/>
+				</div>
+				<div class="form">
+					<h3>Average score *</h3>
+					<input
+						type="text"
+						name="average_score"
+						placeholder="90.00"
+					/>
+				</div>
+				<div class="form">
+					<h3>Group *</h3>
+					<input
+						type="text"
+						name="group"
+						placeholder="K23"
+					/>
+				</div>
+				<div class="button">
+					<input type="submit" value="Submit" class="btn" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

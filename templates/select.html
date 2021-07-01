@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../static/style.css" />
+		<title>KNU Database</title>
+	</head>
+	<body>
+		<div class="container">
+			{% if message %}
+			<textarea name="table data" cols="60", rows="30">{{ message | safe }}</textarea>
+			{% endif %}
+		</div>
+	</body>
+</html>

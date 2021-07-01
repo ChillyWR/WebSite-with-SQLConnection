@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../static/style.css" />
+		<title>KNU Database</title>
+	</head>
+	<body>
+		<div class="container">
+			{% if message %}
+			<p class="message">{{ message | safe }}</p>
+			{% endif %}
+			<form method="POST">
+				<div class="form">
+					<h3>Id *</h3>
+					<input
+						type="number"
+						name="id"
+						placeholder="1"
+					/>
+				</div>
+				<div class="button">
+					<input type="submit" value="Submit" class="btn" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
